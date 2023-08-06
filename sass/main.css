@@ -256,7 +256,7 @@ a {
   position: relative;
   min-width: 770px;
   min-height: 829px;
-  background: url("../../images/hero/hero-img.jpg") no-repeat;
+  background: url("../images/hero/hero-img.jpg") no-repeat;
   background-position: 0% 57%;
   background-size: cover;
 }
@@ -289,18 +289,18 @@ a {
 .about__imgs_1 {
   min-width: 270px;
   min-height: 265px;
-  background: url("../../images/about/about1.jpg") 0 0 no-repeat;
+  background: url("../images/about/about1.jpg") 0 0 no-repeat;
 }
 .about__imgs_2 {
   min-width: 270px;
   min-height: 345px;
   margin-top: 30px;
-  background: url("../../images/about/about2.jpg") 0 0 no-repeat;
+  background: url("../images/about/about2.jpg") 0 0 no-repeat;
 }
 .about__imgs_3 {
   min-width: 270px;
   min-height: 140px;
-  background: url("../../images/about/about3.jpg") 0 0 no-repeat;
+  background: url("../images/about/about3.jpg") 0 0 no-repeat;
   position: absolute;
   left: 0;
   bottom: -60px;
@@ -376,23 +376,23 @@ a {
 }
 .projects__item:nth-child(1) {
   width: 570px;
-  background: url("../../images/projects/project1.jpg");
+  background: url("../images/projects/project1.jpg");
 }
 .projects__item:nth-child(2) {
   width: 570px;
-  background: url("../../images/projects/project2.jpg");
+  background: url("../images/projects/project2.jpg");
 }
 .projects__item:nth-child(3) {
   width: 270px;
-  background: url("../../images/projects/project3.jpg");
+  background: url("../images/projects/project3.jpg");
 }
 .projects__item:nth-child(4) {
   width: 470px;
-  background: url("../../images/projects/project4.jpg");
+  background: url("../images/projects/project4.jpg");
 }
 .projects__item:nth-child(5) {
   width: 370px;
-  background: url("../../images/projects/project5.jpg");
+  background: url("../images/projects/project5.jpg");
 }
 .projects__item:hover, .projects__item:focus {
   transform: scale(1.02);
@@ -468,7 +468,7 @@ a {
 .contacts__img {
   min-width: 749px;
   min-height: 369px;
-  background: url("../../images/contacts/contacts.jpg") 0 0 no-repeat;
+  background: url("../images/contacts/contacts.jpg") 0 0 no-repeat;
 }
 
 .form {

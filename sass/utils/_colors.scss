@@ -1,0 +1,16 @@
+$colors: (
+  'white': #ffffff,
+  '1': #fbfbfb,
+  'gray1': #333333,
+  'gray4': #bdbdbd,
+  'gray5': #e0e0e0,
+  'gray6': #f2f2f2,
+  'input': #f3f3f3,
+  'placeholder': #8d8d8d,
+  'footer-bg': #2c2c2c,
+  'footer-bottom-text': #c8c8c880,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}

@@ -1,0 +1,103 @@
+.contacts {
+  padding-top: 60px;
+  padding-bottom: 120px;
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    padding: 0;
+    outline: none;
+    border: none;
+    cursor: pointer;
+
+    max-width: 222px;
+    padding: 30px 47px;
+
+    border: 0.5px solid getColor('gray6');
+  }
+
+  &__img {
+    min-width: 749px;
+    min-height: 369px;
+    background: url('../../images/contacts/contacts.jpg') 0 0 no-repeat;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &__descr {
+    resize: none;
+    margin-bottom: 12px;
+  }
+
+  &__label {
+    position: relative;
+
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__policy_text {
+    padding-left: 40px;
+    margin-bottom: 21px;
+
+    font-size: 12px;
+    letter-spacing: 0.48px;
+    color: getColor('gray1');
+  }
+
+  &__policy_icon {
+    position: absolute;
+    top: 2px;
+    left: 0;
+
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid getColor('input');
+    border-radius: 6px;
+    fill: transparent;
+    background-color: transparent;
+    transition: fill 250ms ease-out, background-color 250ms ease-out;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__checkbox:checked + &__policy_icon {
+    fill: getColor('gray1');
+    background-color: getColor('input');
+    transition: fill 250ms ease-out, background-color 250ms ease-out;
+  }
+}
+
+.input {
+  font-family: inherit;
+  background-color: getColor('input');
+  padding: 14px 21px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  color: getColor('gray1');
+
+  &::placeholder {
+    color: getColor('placeholder');
+    font-size: 14px;
+    letter-spacing: 0.56px;
+    line-height: 1;
+  }
+}

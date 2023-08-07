@@ -19,22 +19,26 @@ ul {
 }
 body {
   // так як шрифт TT Hover платний, використовую Montserrat
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .container {
-  max-width: 470px;
+  max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
 
-  @media screen and(min-width:768px) {
+  @media screen and (max-width: 1199px) {
     max-width: 768px;
   }
 
-  @media screen and(min-width:1200px) {
-    max-width: 1200px;
+  @media screen and (max-width: 767px) {
+    max-width: 375px;
+  }
+
+  @media screen and (max-width: 374px) {
+    max-width: 100%;
   }
 }
 
@@ -60,4 +64,9 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+::selection {
+  background-color: getColor('gray1');
+  color: #fff;
 }

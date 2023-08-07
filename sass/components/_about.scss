@@ -1,5 +1,9 @@
 .about {
   padding-bottom: 60px;
+  @media screen and (max-width: 1199px) {
+    background-color: getColor('1');
+    padding-bottom: 30px;
+  }
 
   & .wrapper {
     display: flex;
@@ -11,6 +15,13 @@
     padding-right: 70px;
     margin-top: 30px;
     background-color: getColor('1');
+    @media screen and (max-width: 1199px) {
+      background-color: transparent;
+      padding-left: 15px;
+      padding-right: 0;
+      padding-bottom: 0;
+      margin-top: 0;
+    }
   }
 
   &__imgs {
@@ -20,26 +31,42 @@
 
     min-width: 570px;
     position: relative;
+
+    @media screen and (max-width: 1199px) {
+      min-width: auto;
+    }
     &_1 {
       min-width: 270px;
       min-height: 265px;
       background: url('../images/about/about1.jpg') 0 0 no-repeat;
+
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
     }
     &_2 {
       min-width: 270px;
       min-height: 345px;
-      margin-top: 30px;
       background: url('../images/about/about2.jpg') 0 0 no-repeat;
+
+      margin-top: 30px;
+      @media screen and (max-width: 1199px) {
+        margin-top: 0;
+      }
     }
     &_3 {
       min-width: 270px;
       min-height: 140px;
-
       background: url('../images/about/about3.jpg') 0 0 no-repeat;
 
       position: absolute;
       left: 0;
       bottom: -60px;
+
+      @media screen and (max-width: 1199px) {
+        left: 200px;
+        bottom: -60px;
+      }
     }
   }
 
@@ -47,6 +74,9 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    @media screen and (max-width: 1199px) {
+    }
   }
 
   &__text {
@@ -59,5 +89,9 @@
   &__link {
     max-width: 222px;
     padding: 24px 65px;
+    @media screen and (max-width: 1199px) {
+      padding: 20px 40px;
+      margin-left: auto;
+    }
   }
 }

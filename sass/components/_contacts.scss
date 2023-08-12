@@ -32,6 +32,10 @@
     }
 
     border: 0.5px solid getColor('gray6');
+
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
+    }
   }
 
   &__img {
@@ -42,6 +46,9 @@
       min-width: auto;
       flex-basis: 60%;
     }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 }
 
@@ -51,6 +58,9 @@
   gap: 10px;
   @media screen and (max-width: 1199px) {
     flex-basis: 40%;
+  }
+  @media screen and (max-width: 767px) {
+    flex-basis: 100%;
   }
 
   &__descr {

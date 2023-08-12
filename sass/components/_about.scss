@@ -22,6 +22,10 @@
       padding-bottom: 0;
       margin-top: 0;
     }
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+      padding-left: 0;
+    }
   }
 
   &__imgs {
@@ -68,6 +72,9 @@
         bottom: -60px;
       }
     }
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__text-container {
@@ -75,7 +82,8 @@
     flex-direction: column;
     gap: 20px;
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
+      text-align: center;
     }
   }
 
@@ -92,6 +100,9 @@
     @media screen and (max-width: 1199px) {
       padding: 20px 40px;
       margin-left: auto;
+    }
+    @media screen and (max-width: 767px) {
+      margin: 0 auto;
     }
   }
 }

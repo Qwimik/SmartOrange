@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartOrange</title>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./sass/main.css" />
-    <title>SmartOrange</title>
   </head>
   <body>
     <header class="page__header">
@@ -18,25 +18,37 @@
           <a href="./index.html" class="logo"
             ><img src="./images/logo.svg" alt="logo"
           /></a>
-          <div class="burger">
-            <ul class="burger__list">
-              <li class="burger__item">
-                <a href="./index.html" class="burger__link">ГЛАВНАЯ</a>
-              </li>
-              <li class="burger__item">
-                <a href="#" class="burger__link">ГАЛЕРЕЯ</a>
-              </li>
-              <li class="burger__item">
-                <a href="#" class="burger__link">ПРОЕКТЫ</a>
-              </li>
-              <li class="burger__item">
-                <a href="#" class="burger__link">СЕРТИФИКАТЫ</a>
-              </li>
-              <li class="burger__item">
-                <a href="#" class="burger__link">КОНТАКТЫ</a>
-              </li>
-            </ul>
+          <div class="burger js-menu-container">
+            <button class="menu-toggle js-close-menu mobile-menu-close">
+              <svg class="close-modal-icon" width="8" height="8">
+                <use href="./images/sprite.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="page__nav">
+              <ul class="burger__list">
+                <li class="burger__item">
+                  <a href="./index.html" class="burger__link">ГЛАВНАЯ</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#" class="burger__link">ГАЛЕРЕЯ</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#" class="burger__link">ПРОЕКТЫ</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#" class="burger__link">СЕРТИФИКАТЫ</a>
+                </li>
+                <li class="burger__item">
+                  <a href="#" class="burger__link">КОНТАКТЫ</a>
+                </li>
+              </ul>
+            </nav>
           </div>
+          <button class="menu-toggle js-open-menu" aria-expanded="false">
+            <svg class="mobile-menu-open-icon">
+              <use href="./images/sprite.svg#icon-burger"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>

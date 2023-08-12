@@ -21,8 +21,10 @@
     gap: 30px;
     @media screen and (max-width: 1199px) {
       gap: 16px;
-      // justify-content: center;
-      // align-items: center;
+    }
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+      align-items: center;
     }
   }
 

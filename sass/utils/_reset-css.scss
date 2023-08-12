@@ -28,6 +28,7 @@ body {
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+  overflow: hidden;
 
   @media screen and (max-width: 1199px) {
     max-width: 768px;
@@ -63,6 +64,10 @@ a {
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.modal-open {
   overflow: hidden;
 }
 

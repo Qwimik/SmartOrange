@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" />
     <title>SmartOrange</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
       rel="stylesheet"
     />
@@ -39,7 +43,7 @@
                   <a href="#" class="burger__link">СЕРТИФИКАТЫ</a>
                 </li>
                 <li class="burger__item">
-                  <a href="#" class="burger__link">КОНТАКТЫ</a>
+                  <a href="#contacts" class="burger__link">КОНТАКТЫ</a>
                 </li>
               </ul>
             </nav>
@@ -53,7 +57,7 @@
       </div>
     </header>
     <main class="page__main">
-      <section class="page__section hero">
+      <section class="page__section hero animate__animated">
         <div class="container">
           <div class="wrapper">
             <div class="hero__text">
@@ -96,7 +100,7 @@
           </div>
         </div>
       </section>
-      <section class="page__section about">
+      <section class="page__section about animate__animated">
         <div class="container">
           <div class="wrapper">
             <div class="about__imgs">
@@ -126,7 +130,7 @@
           </div>
         </div>
       </section>
-      <section class="page__section goals">
+      <section class="page__section goals animate__animated">
         <div class="container">
           <div class="wrapper">
             <h2 class="goals__title title">Основные задачи</h2>
@@ -144,7 +148,7 @@
           </div>
         </div>
       </section>
-      <section class="page__section projects">
+      <section class="page__section projects animate__animated">
         <div class="container">
           <div class="wrapper">
             <h2 class="projects__title title">Наши проекты</h2>
@@ -226,7 +230,7 @@
           </div>
         </div>
       </section>
-      <section class="page__section contacts">
+      <section class="page__section contacts animate__animated" id="contacts">
         <div class="container">
           <div class="wrapper">
             <h2 class="contacts__title title">Связаться с нами</h2>
@@ -462,6 +466,8 @@
         </div>
       </div>
     </footer>
-    <script type="module" src="./js/main.js"></script>
+
+    <script type="module" src="./js/main.js" defer></script>
+    <script type="module" src="./js/anim.js" defer></script>
   </body>
 </html>
